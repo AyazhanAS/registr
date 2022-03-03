@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+//import state from "./redux/state"
+import data from "./moc-data.json";
+import TableHead from './components/headerItem/TableHead';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+      <div className="app__item-wrapper">
+        <TableHead state = {data}/>
+      
+
+      </div>
     </div>
   );
 }
